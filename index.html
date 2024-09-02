@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kioscos SocioAmbientales UCR</title>
+    <link
+      rel="icon"
+      href="https://64.media.tumblr.com/c5b025441c938d57c22260de20080a47/2e5834ef37d7305d-18/s75x75_c1/992fb64a05f95e7f560074b3d512ef6067433f90.pnj"
+    />
+
+    <meta name="robots" content="index,follow" />
+    <meta property="og:title" content="" />
+    <!--meta property="og:title" content="Kioscos Socioambientales" />
+    <meta
+      property="og:url"
+      content="https://kioscos-socioambientales.ucr.ac.cr/"
+    />
+    <meta
+      property="og:description"
+      content="Kioscos Socioambientales es un programa de la UCR que fortalece la organización comunitaria en defensa de las territorialidades comunes"
+    />
+    <meta
+      property="og:image"
+      content="https://64.media.tumblr.com/dcefb099896c41e5b31ff23feb09af46/ae44c11299092393-8e/s540x810/e86f32a350d48352dfadc066e635f3e2d6727b7f.pnj"
+    /-->
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/hover.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@6.0.4/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <a id="back-to-top" title="Back to top">&uarr;</a>
+    <div class="icon-bar">
+      <a
+        href="https://www.facebook.com/socioambientalesucr.kioscos"
+        target="_blank"
+        class="facebook"
+        ><i class="fa fa-facebook"></i
+      ></a>
+      <a
+        href="https://www.youtube.com/user/kioscosambientales/videos"
+        target="_blank"
+        class="youtube"
+        ><i class="fa fa-youtube"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/kioscos.socioambientales.ucr/"
+        target="_blank"
+        class="instagram"
+        ><i class="fa fa-instagram"></i
+      ></a>
+    </div>
+    <div id="headerUCR">
+      <div class="headerUCR">
+        <a href="https://ucr.ac.cr"
+          ><img
+            loading="lazy"
+            src="https://64.media.tumblr.com/ad9d9073b62156e28d933de6b08e83b3/3cdaff6f6634b6b2-db/s540x810/68c67477f41963e19d032d9bc9f0209bf2b46587.png"
+            height="27px"
+            width="200px"
+        /></a>
+      </div>
+    </div>
+    <div class="center">
+      <div class="headerKioskos">
+        <div></div>
+        <div>
+          <a href="/" data-navigo
+            ><img
+              loading="lazy"
+              src="https://64.media.tumblr.com/638ac540cfe6af49a6f412f9b4bf32e3/34f02a572a998a33-7d/s500x750/0e2b6bd8a27b691e11a3182cd335ec3d860372e6.png"
+              alt=""
+              height="120px"
+              width="143px"
+          /></a>
+        </div>
+        <div></div>
+      </div>
+    </div>
+
+    <!--- MENU -->
+
+    <div id="menu">
+      <div class="menuCenter">
+        <nav>
+          <label for="drop" class="toggle">Menú</label>
+          <input type="checkbox" id="drop" />
+          <ul class="menu">
+            <li><a href="/" data-navigo>Inicio</a></li>
+            <li><a href="/quienes-somos" data-navigo>Quiénes Somos</a></li>
+            <li>
+              <label for="drop-1" class="toggle">Proyectos +</label>
+              <a>Proyectos</a>
+              <input type="checkbox" id="drop-1" />
+              <ul>
+                <li><a href="/proyectos-activos" data-navigo>Activos</a></li>
+                <li>
+                  <a href="/proyectos-historicos" data-navigo>Históricos</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="/voces-politica" data-navigo>Voces y Política</a></li>
+            <li><a href="/columnas" data-navigo>Columnas Semanario</a></li>
+            <li>
+              <label for="drop-2" class="toggle">
+                Recursos y herramientas +</label
+              >
+              <a> Recursos y herramientas</a>
+              <input type="checkbox" id="drop-2" />
+              <ul>
+                <li><a href="/publicaciones" data-navigo>Publicaciones</a></li>
+                <li><a href="/videos" data-navigo>Videos</a></li>
+                <li><a href="/fotos" data-navigo>Fotos</a></li>
+                <li><a href="/noticias" data-navigo>Noticias</a></li>
+                <li><a href="/mapas" data-navigo>Mapas</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <br>
+    </div>
+    
+    
+    <!-- main -->
+
+    <main class="">
+      <template id="titulos-template">
+        <div class="titulosSecciones {{cells.classTitulo}}">
+          {{{cells.titulo}}}
+        </div>
+        <div class="subtitulo {{cells.classSubtitulo}}">
+          {{{cells.subtitulo}}}
+        </div>
+      </template>
+      <section class="inicioSection">
+        <div class="swiper-container">
+          <div class="swiper-wrapper dinamicos" id="slide">
+            <template id="slide-template">
+              <div class="swiper-slide center" style="width: 100%">
+                <div class="titulos containerImgText" href="#">
+                  <img
+                    loading="lazy"
+                    class="imgSw"
+                    src="{{cells.imgURL}}"
+                    title=""
+                    style=""
+                    onerror="this.style.display = 'none'"
+                  />
+                  <a href=""
+                    ><span class="bottom-left">{{cells.imgCaption}}</span></a
+                  >
+                </div>
+              </div>
+            </template>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <!--  -->
+      <section class="inicioSection quienesSomos verde">
+        <div class="center dinamicos" id="titulo-qs-inicio"></div>
+        <div id="quienesResumen" class="dinamicos parrafos">
+          <template id="quienes-template">
+            <p class="parrafoQS">{{{cells.resumen}}}</p>
+          </template>
+        </div>
+      </section>
+      <!--  -->
+
+      <section class="inicioSection proyectos cafe">
+        <div class="center dinamicos" id="titulo-proyectos-inicio"></div>
+        <div class="pContainer dinamicos cafe" id="proyectos">
+          <template id="proyectosInicio-template">
+            <div class="containerOverlay">
+              <a
+                class="titulos hvr-float show-hvr"
+                href="#/proyectos-activos/proyecto?{{cells.id}}"
+                data-navigo
+              >
+                <img
+                  loading="lazy"
+                  src="{{cells.imgURL}}"
+                  alt=""
+                  class="imageOverlay imgCirculo"
+                  onerror="this.style.display = 'none'"
+                />
+                <div>
+                  <p>
+                    <small class="white-text">{{cells.nombre}}</small>
+                  </p>
+                </div>
+
+                <br />
+              </a>
+            </div>
+          </template>
+        </div>
+      </section>
+      <!--  -->
+      <section class="inicioSection pubs">
+        <div class="center dinamicos" id="titulo-pubs-inicio"></div>
+        <div class="pContainer dinamicos" id="publicaciones">
+          <template id="pubs-template">
+            <div class="containerOverlay">
+              <div class="">
+                <a class="titulos hvr-float" href="{{cells.pubURL}}"
+                  ><img
+                    loading="lazy"
+                    src="{{cells.imgURL}}"
+                    alt=""
+                    class="pubImg"
+                    onerror="this.style.display = 'none'"
+                  />
+                  <br />
+                  <div>
+                    <small class="">{{{cells.titulo}}}</small>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+      <!--  -->
+      <section class="inicioSection noticias cafe">
+        <div class="center dinamicos" id="titulo-noti-inicio"></div>
+        <div class="nContainer center dinamicos" id="noticias">
+          <template id="noticias-template">
+            <div class="noticia hvr-float">
+              <a
+                class="titulos"
+                href="#/noticias/noti?{{cells.id}}"
+                data-navigo
+              >
+                <figure class="redondear" width="300px" height="300px">
+                  <div class="image">
+                    <img
+                      loading="lazy"
+                      class="nImg"
+                      src="{{cells.imgURL}}"
+                      onerror="this.style.display = 'none'"
+                      width="100%"
+                      height="200px"
+                    />
+                  </div>
+                  <figcaption>
+                    <div class="date redondear">
+                      <span class="day">{{cells.dia}}</span
+                      ><span class="month">{{cells.mes}}</span>
+                    </div>
+                    <h5>{{{cells.titulo}}}</h5>
+                  </figcaption>
+                  <footer class="verde">
+                    <small>{{cells.tipoNoticia}}</small>
+                  </footer>
+                </figure>
+              </a>
+            </div>
+          </template>
+        </div>
+      </section>
+      <!--  -->
+      <section class="inicioSection verde">
+        <div class="center dinamicos" id="titulo-contacto-inicio"></div>
+        <div id="contacto" class="cContainer dinamicos">
+          <template id="contacto-template">
+            <div class="verde center">
+              <i class="fa {{cells.iconoContacto}} fa-fw white-text"> </i
+              ><a class="left titulos white-text nara-hvr"
+                >{{{cells.contacto}}}</a
+              >
+            </div>
+          </template>
+        </div>
+      </section>
+      <!--  -->
+      <section class="inicioSection negro">
+        <div
+          class="white-text center dinamicos negro"
+          id="titulo-enlaces-inicio"
+        ></div>
+
+        <div class="footerEnlaces">
+          <ul>
+            <li>
+              <div
+                class="center dinamicos negro"
+                id="subtitulo-enlaces-va"
+              ></div>
+            </li>
+            <div id="vasAl" class="dinamicos">
+              <template id="enlaces-template">
+                <li class="enlaces-interes">
+                  <a
+                    class="white-text titulos nara-hvr"
+                    href="{{cells.URL}}"
+                    target="_blank"
+                    >{{{cells.nombre}}}</a
+                  >
+                </li>
+              </template>
+            </div>
+          </ul>
+
+          <ul>
+            <li>
+              <div
+                class="center dinamicos negro"
+                id="subtitulo-enlaces-ua"
+              ></div>
+            </li>
+
+            <div id="uaAL" class="dinamicos"></div>
+          </ul>
+
+          <ul>
+            <li>
+              <div
+                class="center dinamicos negro"
+                id="subtitulo-enlaces-ae"
+              ></div>
+            </li>
+
+            <div id="extAL" class="dinamicos"></div>
+          </ul>
+        </div>
+      </section>
+
+      <!------- quienes somos ---->
+      <div class="center dinamicos" id="titulo-quienesSomos"></div>
+      <section class="quienesSomosSection center dinamicos" id="qsImg">
+        <template id="qsImg-template">
+          <img
+            onerror="this.style.display = 'none'"
+            class="qImg"
+            src="{{cells.imgURL}}"
+          />
+        </template>
+      </section>
+
+      <section class="quienesSomosSection qContainer">
+        <div id="descripcion" class="verde dinamicos redondear p20">
+          <template id="desc-template">
+            <div>
+              <p class="parrafoQS">{{{cells.parrafos}}}</p>
+            </div>
+          </template>
+        </div>
+        <div id="objetivo" class="p20 verde dinamicos redondear">
+          <template id="obj-template">
+            <div>
+              <div class="row">
+                <h2 class="center">Objetivo General</h2>
+                <div class="left parrafoQS">{{{cells.objetivoGeneral}}}</div>
+              </div>
+              <div class="row">
+                <h2 class="center">Objetivos Específicos</h2>
+                <div class="parrafoQS">{{{cells.objetivoEspe1}}}</div>
+                <div class="parrafoQS">{{{cells.objetivoEspe2}}}</div>
+                <div class="parrafoQS">{{{cells.objetivoEspe3}}}</div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+      <section class="quienesSomosSection cafe">
+        <div class="white-text center dinamicos" id="titulo-informes"></div>
+        <div class="footerInformes cafe dinamicos" id="informes">
+          <template id="informes-template">
+            <li>
+              <button
+                class="nara white-text titulos"
+                onclick="window.location.href='{{cells.informeURL}}'"
+              >
+                <i class="fa fa-file-text" aria-hidden="true"></i>
+                {{cells.nombreInforme}}
+              </button>
+            </li>
+          </template>
+        </div>
+      </section>
+
+      <!--  Proyectos Activos  -->
+      <section class="proyectosActSection">
+        <div class="center dinamicos" id="titulo-proyectosActivos"></div>
+        <div class="qContainer dinamicos" id="proyectosActivos">
+          <template id="proyectosActivos-template">
+            <a
+              class="btn modal-show hvr-fade-cafe"
+              href="#/{{cells.url}}/proyecto?{{cells.id}}"
+              data-navigo
+            >
+              <div class="container">
+                <div class="center">
+                  <img
+                    loading="lazy"
+                    class="pImg circle"
+                    src="{{cells.imgURL}}"
+                    onerror="this.style.display = 'none'"
+                  />
+                </div>
+
+                <div class="center titulos">{{cells.nombre}}</div>
+              </div>
+            </a>
+          </template>
+        </div>
+      </section>
+
+      <!---- Proyectos Activos Detalle --->
+      <section class="paDetalleSection">
+        <div class="center dinamicos" id="titulo-proyectosActivosDetalle"></div>
+        <div id="proyectosActivosDetalle" class="dinamicos">
+          <template id="paDetalle-template">
+            <h2 class="verde white-text center">{{cells.nombre}}</h2>
+            <div class="qContainer">
+              <div>
+                <div class="center">
+                  <img
+                    loading="lazy"
+                    class="pImgDetalle"
+                    src="{{cells.imgURL}}"
+                    onerror="this.style.display = 'none'"
+                  />
+                </div>
+              </div>
+              <div class="p20 verde redondear" onerror="this.style='none'">
+                {{{cells.descripcion}}}
+              </div>
+              <div>
+                <div class="p20 cafe white-text redondear">
+                  <p class="parrafo"><b>Unidad Académica:</b></p>
+                  <p class="parrafo">{{{cells.unidad}}}</p>
+                  <p class="parrafo"><b>Docentes:</b></p>
+                  <p class="parrafo">{{{cells.docentes}}}</p>
+                  <p class="parrafo"><b>Contacto:</b></p>
+                  <p class="parrafo">
+                    <a class="white-text" href="mailto:{{cells.contacto}}"
+                      >{{{cells.correo}}}</a
+                    >
+                  </p>
+                  <p class="parrafo"><b>Territorio:</b></p>
+                  <p class="parrafo">{{{cells.territorio}}}</p>
+                </div>
+                <br />
+                <div class="">
+                  <span
+                    ><a
+                      class="p20 nara white-text redondear"
+                      href="{{cells.facebook}}"
+                      target="_blank"
+                      ><strong
+                        ><i
+                          class="fa fa-facebook"
+                          aria-hidden="true"
+                        ></i> </strong></a
+                  ></span>
+
+                  <span>
+                    <a
+                      class="p20 nara white-text redondear"
+                      href="{{cells.instagram}}"
+                      target="_blank"
+                      ><strong
+                        ><i
+                          class="fa fa-instagram"
+                          aria-hidden="true"
+                        ></i> </strong></a
+                  ></span>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+      <!--  ProyectosHistoricos  -->
+
+      <section class="proyectosHistSection">
+        <div class="center dinamicos" id="titulo-proyectosHistoricos"></div>
+        <div class="qContainer dinamicos" id="proyectosHistoricos"></div>
+      </section>
+
+      <!---- Proyectos Historicos Detalle --->
+      <section class="phDetalleSection">
+        <div
+          class="center dinamicos"
+          id="titulo-proyectosHistoricosDetalle"
+        ></div>
+        <div id="proyectosHistoricosDetalle" class="dinamicos"></div>
+      </section>
+
+      <!---------Voces y Politica---------->
+      <section class="vocesPoliticaSection">
+        <div class="center dinamicos" id="titulo-vocesPolitica"></div>
+        <div class="p10 center nContainer">
+          <input
+            id="inputBuscarVoces"
+            class="buscar center"
+            type="text"
+            name="keywordVoces"
+            placeholder="Buscar Episodios"
+            onkeyup="buscarInfo('inputBuscarVoces','Voces','voces','.vocesItem')"
+          />
+          <!--button id="filtersVoces" class="buscar verde ">Buscar</button-->
+          <div></div>
+        </div>
+        <div id="voces" class="columnasContainer dinamicos">
+          <template id="voces-template">
+            <div class="tab vocesItem redondear">
+              <input type="checkbox" id="{{cells.titulo}}" />
+              <label class="tab-label gris" for="{{cells.titulo}}"
+                ><div>
+                  <b>{{cells.fecha}}</b> <voces>{{{cells.titulo}}}</voces>
+                </div></label
+              >
+              <div class="tab-content">
+                <div class="qContainer">
+                  <div class="center">
+                    <btn class="hvr-float"
+                      ><a
+                        class="titulos nara redondear full-btn"
+                        href="{{cells.enlaceURL}}"
+                        target="_blank"
+                        ><i class="fa {{cells.icon}}" aria-hidden="true"></i>
+                        {{cells.cta}}</a
+                      ></btn
+                    >
+                  </div>
+                  <div class="textoParrafo">
+                    <p class="">{{{cells.descripcion}}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <!---------Columnas Seminario---------->
+      <section class="columnasSection">
+        <div class="center dinamicos" id="titulo-columnas"></div>
+        <div class="p10 center nContainer">
+          <input
+            class="buscar center"
+            type="text"
+            name="keywordColumnas"
+            placeholder="Buscar Columnas"
+            onkeyup="buscarInfo('inputBuscarColumnas','Columnas','columnas','.columnasItem')"
+          />
+          <div>
+          </div>
+          <!--button id="filtersColumnas" class="buscar verde ">Buscar</button-->
+        </div>
+        <div id="columnas" class="columnasContainer dinamicos">
+          <template id="columnas-template">
+            <div class="tab columnasItem redondear">
+              <input type="checkbox" id="{{cells.titulo}}-columna" />
+              <label class="tab-label gris" for="{{cells.titulo}}-columna"
+                ><div>
+                  <b>{{cells.fecha}}</b> <columnas>{{{cells.titulo}}}</columnas>
+                </div></label
+              >
+              <div class="tab-content">
+                <div class="qContainer">
+                  <div class="center">
+                    <btn class="hvr-float"
+                      ><a
+                        class="titulos nara redondear full-btn"
+                        href="{{cells.enlaceURL}}"
+                        target="_blank"
+                        ><i class="fa {{cells.icon}}" aria-hidden="true"></i>
+                        {{cells.cta}}</a
+                      ></btn
+                    >
+                  </div>
+                  <div class="textoParrafo">
+                    <p class="">{{{cells.descripcion}}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <!--------- Noticias ---------->
+      <section class="noticiasSection">
+        <div class="center dinamicos" id="titulo-noticias"></div>
+
+        <div class="p10 nContainer center">
+          <input
+            id="inputBuscarNoticias"
+            class="buscar center"
+            type="text"
+            name="keyword"
+            placeholder="Buscar Noticias"
+          />
+          <!--button id="filters" class="buscar verde ">Buscar</button-->
+          <select
+            name="type"
+            id="type"
+            class="nara center buscar"
+            style="max-width: 300px"
+          >
+            <option value="" selected>Todas Las Categorías</option>
+            <option value="Nota">Nota</option>
+            <option value="Entrevista">Entrevista</option>
+          </select>
+        </div>
+
+        <div class="wrapper qContainer dinamicos" id="noticiasCompleto">
+          <template id="noticiasCompleto-template">
+            <div class="item {{cells.tipoNoticia}} noticia hvr-float">
+              <a
+                class="titulos"
+                href="#/noticias/noti?{{cells.id}}"
+                data-navigo
+              >
+                <figure class="redondear" width="300px" height="300px">
+                  <div class="image">
+                    <img
+                      loading="lazy"
+                      class="nImg"
+                      src="{{cells.imgURL}}"
+                      onerror="this.style.display = 'none'"
+                      width="100%"
+                      height="200px"
+                    />
+                  </div>
+                  <figcaption>
+                    <div class="date redondear">
+                      <span class="day">{{cells.dia}}</span
+                      ><span class="month">{{cells.mes}}</span>
+                    </div>
+                    <h5 class="tituloNoticia">{{{cells.titulo}}}</h5>
+                  </figcaption>
+                  <footer class="verde">
+                    <small>{{cells.tipoNoticia}}</small>
+                  </footer>
+                </figure>
+              </a>
+            </div>
+          </template>
+        </div>
+
+        <div class="center">
+          <div class="pagination"></div>
+        </div>
+        <br />
+        <br />
+      </section>
+      <!--------- Noticia Detalle ---------->
+      <section class="noticiasDetalleSection">
+        <div class="center dinamicos" id="titulo-noticiasDetalle"></div>
+        <div id="noticiasDetalle" class="dinamicos">
+          <template id="noticiasDetalle-template">
+            <h2 class="p20 verde white-text center">{{cells.titulo}}</h2>
+
+            <div class="qContainer">
+              <div>
+                <div class="center">
+                  <a
+                    data-fancybox
+                    data-caption="* {{cells.titulo}} * "
+                    href="{{cells.imgURL}}"
+                  >
+                    <img
+                      class="pImgDetalle"
+                      loading="lazy"
+                      src="{{cells.imgURL}}"
+                      onerror="this.style.display='none'"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div>
+                <div class="p20 left">
+                  <small class="cafe redondear white-text"
+                    >{{cells.fecha}}</small
+                  >
+                </div>
+                <div class="p20">{{{cells.contenidoNoticia}}}</div>
+              </div>
+            </div>
+            <br /><br />
+          </template>
+        </div>
+      </section>
+
+      <!---------Publicaciones---------->
+      <section class="publicacionesSection">
+        <div class="center dinamicos" id="titulo-publicaciones"></div>
+        <br />
+        <template id="pub-template">
+          <div class="hvr-float redondear container">
+            <!--a class="btn"
+              href="#/publicaciones/pub?{{cells.idPub}}"
+            -->
+            <div class="center">
+              <img
+                loading="lazy"
+                class="pubImg"
+                src="{{cells.imgURL}}"
+                onerror="this.style.display = 'none'"
+              />
+            </div>
+            <div class="center titulos">{{{cells.titulo}}}</div>
+            <!--/a-->
+            <br />
+            <div class="center">
+              <a
+                class="fullWidth verde white-text btn redondear"
+                href="{{cells.pubURL}}"
+                ><i class="fa fa-download" aria-hidden="true"></i> Descargar</a
+              >
+            </div>
+          </div>
+        </template>
+        <div>
+          <div id="agua-titulo" class="titulo dinamicos center"></div>
+          <div id="agua" class="qContainer dinamicos"></div>
+          <br />
+          <div id="turismo-titulo" class="titulo dinamicos center"></div>
+          <div id="turismo" class="qContainer dinamicos"></div>
+          <br />
+          <div id="territorio-titulo" class="titulo dinamicos center"></div>
+          <div id="territorio" class="qContainer dinamicos"></div>
+          <br />
+          <div id="mineria-titulo" class="titulo dinamicos center"></div>
+          <div id="mineria" class="qContainer dinamicos"></div>
+          <br />
+          <div id="agro-titulo" class="titulo dinamicos center"></div>
+          <div id="agro" class="qContainer dinamicos"></div>
+          <br />
+          <div id="carto-titulo" class="titulo dinamicos center"></div>
+          <div id="carto" class="qContainer dinamicos"></div>
+          <br />
+          <div id="estudios-titulo" class="titulo dinamicos center"></div>
+          <div id="estudios" class="qContainer dinamicos"></div>
+          <br />
+          <div id="guias-titulo" class="titulo dinamicos center"></div>
+          <div id="guias" class="qContainer dinamicos"></div>
+          <br />
+          <div id="memorias-titulo" class="titulo dinamicos center"></div>
+          <div id="memorias" class="qContainer dinamicos"></div>
+          <br />
+          <div id="modelo-titulo" class="titulo dinamicos center"></div>
+          <div id="modelo" class="qContainer dinamicos"></div>
+          <br />
+          <div id="tfg-titulo" class="titulo dinamicos center"></div>
+          <div id="tfg" class="qContainer dinamicos"></div>
+        </div>
+        <br />
+      </section>
+
+      <!---- Publicaciones Detalle --->
+      <section class="pubsDetalleSection">
+        <div class="center dinamicos" id="titulo-pubsDetalle"></div>
+        <div id="pubsDetalle" class="dinamicos">
+          <template id="pubsDetalle-template">
+            <h2 class="verde white-text center">{{cells.titulo}}</h2>
+            <div class="qContainer">
+              <div>
+                <div class="center">
+                  <img
+                    loading="lazy"
+                    class="pImgDetalle"
+                    src="{{cells.imgURL}}"
+                    onerror="this.style.display = 'none'"
+                  />
+                </div>
+              </div>
+              <div class="p20 verde redondear">{{{cells.descripcion}}}</div>
+              <div class="p20 cafe white-text redondear">
+                <p class="parrafo"><b>Año:</b></p>
+                <p class="parrafo">{{{cells.year}}}</p>
+              </div>
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <!---------Galeria---------->
+      <section class="fotosSection">
+        <div class="center dinamicos" id="titulo-fotos"></div>
+        <br />
+
+        <!--div id="fotos" class="dinamicos fotosContainer"-->
+        <div class="swiper-gallery">
+          <div class="swiper-wrapper dinamicos" id="fotos">
+            <template id="fotos-template">
+              <div class="swiper-slide center" style="width: 100%">
+                <div class="titulos containerImgText" href="#">
+                  <a
+                    data-fancybox="gallery"
+                    data-caption="* {{cells.titulo}} * "
+                    href="{{cells.imgURL}}"
+                  >
+                    <img
+                      loading="lazy"
+                      class="imgSwGaleria"
+                      src="{{cells.imgURL}}"
+                      onerror="this.style.display='none'"
+                    />
+                  </a>
+                  <span class="bottom-left p20">{{cells.titulo}}</span>
+                </div>
+              </div>
+            </template>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <template id="foto-template">
+          <div>
+            <div class="center hvr-fade-cafe redondear">
+              <a
+                data-fancybox="gallery"
+                data-caption="* {{cells.titulo}} * "
+                href="{{cells.imgURL}}"
+              >
+                <img
+                  class="pImgDetalle"
+                  loading="lazy"
+                  src="{{cells.imgURL}}"
+                  onerror="this.style.display='none'"
+                />
+              </a>
+              <div class="p20">{{cells.year}} - {{{cells.titulo}}}</div>
+            </div>
+          </div>
+        </template>
+
+        <br />
+        <br />
+      </section>
+
+      <!---------Mapas---------->
+
+      <section class="mapasSection">
+        <div class="center dinamicos" id="titulo-mapas"></div>
+        <br />
+        <div id="mapas" class="dinamicos qContainer">
+          <template id="mapas-template">
+            <div class="hvr-float redondear container">
+              <!--a class="btn"
+              href="#/mapas/mapa?{{cells.id}}"
+            -->
+              <div class="center">
+                <img
+                  loading="lazy"
+                  class="pubImg"
+                  src="{{cells.imgURL}}"
+                  onerror="this.style.display = 'none'"
+                />
+              </div>
+              <div class="center titulos">{{{cells.titulo}}}</div>
+              <!--/a-->
+              <br />
+              <div class="center">
+                <a
+                  class="fullWidth verde white-text btn redondear"
+                  href="{{cells.mapaURL}}"
+                  ><i class="fa fa-download" aria-hidden="true"></i>
+                  Descargar</a
+                >
+              </div>
+              <br />
+            </div>
+          </template>
+        </div>
+      </section>
+
+      <!---------Videos---------->
+
+      <section class="videosSection">
+        <div class="center dinamicos" id="titulo-videos"></div>
+        <div id="videos" class="dinamicos qContainer">
+          <template id="videos-template">
+            <div class="hvr-float redondear center">
+              <div class="redondear">
+                <a href="{{cells.videoURL}}"
+                  ><img
+                    loading="lazy"
+                    class="redondear pubImg"
+                    src="https://img.youtube.com/vi/{{cells.idVideo}}/0.jpg"
+                    onerror="this.style.display = 'none'"
+                /></a>
+              </div>
+              <!--iframe  width="250" height="250" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe-->
+              <p class="nara-hvr redondear">{{cells.titulo}}</p>
+              <p></p>
+              <div></div>
+            </div>
+          </template>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <!---        Pie de pagina        -->
+
+  <footer class="footerUCR">
+    <div class="">
+      <div>
+        <img
+          class="imgContainer"
+          src="https://www.ucr.ac.cr/medios/imagenes/2016/ucr.svg"
+        />
+      </div>
+    </div>
+    <div class="">
+      <div class="">
+        <ul style="align-items: left">
+          <li class="">
+            <img
+              class=""
+              src="https://medios.ucr.ac.cr/medios/imagenes/2015/ico-noticias.svg"
+              alt="Noticias"
+            /><a class="" href="https://www.ucr.ac.cr/noticias/" tabindex="273">
+              <span class="texto">Noticias</span>
+            </a>
+          </li>
+          <li class="">
+            <img
+              class=""
+              src="https://medios.ucr.ac.cr/medios/imagenes/2015/ico-actividades.svg"
+              alt="Agenda"
+            /><a
+              class=""
+              href="https://www.ucr.ac.cr/actividades/semana/"
+              tabindex="274"
+            >
+              <span class="texto">Agenda</span>
+            </a>
+          </li>
+          <li class="">
+            <img
+              class=""
+              src="https://medios.ucr.ac.cr/medios/imagenes/2015/ico-multimedios.svg"
+              alt="Multimedios"
+            /><a
+              class=""
+              href="https://www.ucr.ac.cr/multimedios/"
+              tabindex="275"
+            >
+              <span class="texto">Multimedios</span>
+            </a>
+          </li>
+          <li class="">
+            <img
+              class=""
+              src="https://medios.ucr.ac.cr/medios/imagenes/2015/ico-documentos.svg"
+              alt="Documentos"
+            /><a
+              class=""
+              href="https://www.ucr.ac.cr/multimedios/documentos/"
+              tabindex="276"
+            >
+              <span class="texto">Documentos</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="listaUCR">
+      <div class="">
+        <ul>
+          <li class="destacado">
+            <a
+              class=""
+              href="https://www.ucr.ac.cr/directorio/oficina-de-registro-e-informacion-ori.html"
+              tabindex="277"
+              ><span class="solo texto">Admisión, matrícula y horarios</span></a
+            >
+          </li>
+          <li class="destacado">
+            <a
+              class=""
+              href="https://www.ucr.ac.cr/directorio/oficina-de-becas-atencion-socioeconomica-obas.html"
+              tabindex="278"
+              ><span class="solo texto">Becas</span></a
+            >
+          </li>
+          <li class="destacado">
+            <a class="" href="https://www.ucr.ac.cr/directorio/" tabindex="279"
+              ><span class="solo texto"
+                >Directorio completo de contactos UCR</span
+              ></a
+            >
+          </li>
+          <li class="destacado">
+            <a
+              class=""
+              href="https://buzon.ucr.ac.cr/"
+              target="_blank"
+              tabindex="280"
+              ><span class="solo texto">Buzón interactivo de consultas</span></a
+            >
+          </li>
+          <li class="destacado">
+            <a
+              class=""
+              href="https://www.ucr.ac.cr/contacto.html"
+              tabindex="281"
+              ><span class="solo texto"
+                >Contacto sitio web www.ucr.ac.cr</span
+              ></a
+            >
+          </li>
+          <li class="destacado">
+            <a
+              class=""
+              href="https://www.ucr.ac.cr/acerca-u/mapa-del-sitio.html"
+              tabindex="282"
+              ><span class="solo texto">Mapa del Sitio</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <div class="white-text footerBottom">
+    <div class="center footer-copyright">
+      <div class="container">
+        © <span id="year">2022</span> Universidad de Costa Rica - Tel.
+        2511-4000. Aviso Legal.
+      </div>
+    </div>
+  </div>
+
+  <!--Dependencias del sitio web-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <!--script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sheetrock/1.1.4/dist/sheetrock.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.2/handlebars.min.js"></script>
+  <!--script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script-->
+  <script src="//unpkg.com/navigo"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8.3.0/swiper-bundle.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/back.js"></script>
+</html>

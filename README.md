@@ -1,1 +1,0 @@
-# kioscos-socioambientales

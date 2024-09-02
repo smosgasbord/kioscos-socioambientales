@@ -1,0 +1,1054 @@
+
+
+
+
+/**************************************************GENERAL**********************************************/
+
+.btn {
+  text-decoration: none;
+}
+
+
+.p10 {
+  padding:10px;
+}
+
+button {
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+
+}
+
+
+.btnBuscar{
+  margin-top:10px;
+}
+
+.cursor-not-allowed {
+  cursor:not-allowed;
+}
+
+font-face {
+  font-family: 'Trueno', Sans-Serif;
+  src: url('TruenoRg.otf');
+}
+
+.fullWidth {
+  width:100%;
+}
+
+.center {
+  align-items: center!important;
+  text-align: center!important;
+}
+
+.left{
+  text-align:left!important;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+body {
+  /*display: grid;*/
+  background: white;
+  margin: 0;
+  color: black;
+  font-family: 'Trueno', sans-serif;
+  font-size: 17px;
+
+}
+
+.p20 {
+  padding:20px!important;
+}
+
+.headerUCR {
+  background: #00c0f3;
+  padding:10px 0 10px 15px;
+}
+
+.headerKioskos {
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 6px;
+  text-align: center;
+}
+
+
+.parrafos {
+	margin-left: 20px;
+	margin-right: 20px;
+	color: white;
+  padding:0 20px 0 20px;
+}
+
+
+.titulos {
+  text-decoration: none;
+  padding: 5px;
+ 
+}
+
+.titulosSecciones {
+ font-size:2em; 
+  padding: 10px;
+  font-weight:bold;
+}
+ 
+.titulosSecciones:empty {
+  display:none;
+}
+
+.subtitulo {
+  font-weight:bold;
+}
+
+
+.subtitulo:empty {
+  display:none;
+}
+
+.carousel {
+  background: #43AA8B;
+  align-items: center;
+  max-height: 70%;
+}
+
+
+.quienesSomos {
+  padding: 0 20px 0 20px;
+
+}
+
+.proyectos {
+  padding: 0 20px 0 20px;
+}
+
+.pubs {
+  background-color: white;
+   padding: 0 20px 0 20px;
+  color: black;
+  margin:20px;
+}
+
+.noticias {
+   padding: 0 20px 0 20px;
+}
+
+.redondear{
+  border-radius:8px;
+}
+
+
+.white-text {
+  color: white!important;
+}
+
+.verde {
+  background: #a4a036!important;
+  padding: 10px;
+}
+
+.cafe {
+  background-color: #542b13!important;
+  padding: 10px;
+  color: white!important;
+}
+
+.gris{
+    background-color: #808080!important;
+    padding: 10px;
+    color: white!important;
+}
+
+.nara {
+  background-color: #c0832b;
+  padding: 5px;
+}
+
+.nara-hvr:hover {
+  background-color: #c0832b;
+  padding: 5px;
+}
+
+.negro{
+  background: black;
+  padding: 10px;
+}
+
+p:empty{
+  display:none;
+}
+
+.negro:empty, .verde:empty, .gris:empty, .nara:empty, .cafe:empty {
+  background:none!important;
+  display:none!important;
+}
+
+.parrafoQS{
+  margin-bottom: 40px;
+}
+
+.botonVP {
+  background-color: #c0832b;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+
+}
+
+.enlaces-interes{
+  padding: 5px;
+}
+
+/* En construcción*/
+.EC {
+  background: red;
+}
+
+/* Terminado*/
+.T {
+  font-size: 1.3em;
+}
+
+#informes li {
+  padding:10px;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	background:  #a4a036!important;
+  color: white!important;
+	padding: 10px;
+}
+
+.swiper-pagination-bullet {
+	margin: 5px;
+}
+
+.swiper-pagination {
+	position: relative!important;
+}
+
+.swiper-pagination-bullet-active {
+	  background: #a4a036!important;
+}
+
+/*
+.dinamicos:empty {
+  display:none!important;
+} */
+
+section:empty {
+  display:none!important;
+}
+
+/* pubs */
+
+.download {
+	position: absolute;
+	right: 10px;
+	top: 0px;
+}
+
+
+.pubImg {
+	height: 250px;
+	width: 250px;
+}
+
+/***** Noticias *****/
+
+figure {
+  color: white;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+}
+
+figure img {
+  max-width: 100%;
+  vertical-align: top;
+  position: relative;
+}
+
+figure figcaption {
+  padding: 15px ;
+  position: relative;
+  background-color: #ffffff;
+}
+figure .date {
+  background:#a4a036;
+  top: 15px;
+  color: white;
+  left: 15px;
+  min-height: 48px;
+  min-width: 48px;
+  position: absolute;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-wrap:break;
+}
+figure .date span {
+  display: block;
+  line-height: 24px;
+}
+figure .date .month {
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+figure h5,
+figure p {
+  margin: 0;
+  padding: 0;
+}
+figure h5 {
+  min-height: 50px;
+  margin-bottom: 10px;
+  margin-left: 60px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+figure footer {
+  padding: 0 25px;
+  color: white;
+  line-height: 30px;
+  text-align: right;
+}
+
+.show-hvr > div{
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+.show-hvr:hover > div{
+  visibility: visible;
+  opacity: 1;
+}
+
+.buscar {
+  display: block;
+  opacity:1!important;
+  z-index:1!important;
+  position:relative!important;
+  border-radius:5px;
+  padding:10px;
+  margin:20px;
+  
+}
+
+
+.tituloNoticia {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+
+
+/*///////////// FOOTER/////***************************************************************** */
+
+.footerBottom{
+  background: #1a1d1e;
+  padding: 15px;
+}
+
+.footerInformes {
+  margin: 0;
+  display: grid;
+  /*grid-template-columns: repeat(3,1fr);*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-auto-rows: minmax(50px, auto);
+  color: #FFF;
+  padding: 5px;
+}
+
+.footerEnlaces {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  color: #FFF;
+  font-size: 13.5px;
+  margin-bottom:20px;
+}
+
+.footerEnlaces ul {
+  display:grid;
+  
+}
+
+ul li:empty{
+  display:none;
+}
+
+
+.footerUCR {
+  margin: 0;
+  display: grid;
+  /*grid-template-columns: repeat(3,1fr);*/
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   /*grid-auto-rows: minmax(200px, auto);*/
+  background: #1a1d1e;
+  color: #FFF;
+  font-size: 14px;
+  list-style-type: none;
+  /*word-wrap: break-word;*/
+   padding: 0 20px 0 20px;
+  line-height: 1.6;
+}
+
+.footerUCR ul {
+  color: white;
+  list-style-type: none;
+}
+
+.footerUCR a {
+  color: white;
+  text-decoration: none;
+}
+
+.imagenFooter {
+  float: left;
+}
+
+
+
+/** ********************pubs y proyectos*************************/
+.pContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin:20px;
+}
+
+.cContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1em;
+  margin-right: 30px;
+  padding-bottom:30px;
+}
+
+.nContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1em;
+  justify-content: center;
+}
+
+.qContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-gap: 1em;
+  margin: 20px;
+
+  text-align: left;
+  line-height: 1.4;
+  /*text-align: justify;*/
+}
+
+.rContainer {
+  display: grid;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-gap: 1em;
+  padding: 10px;
+
+  text-align: justify;
+}
+
+.fotosContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-gap: 1em;
+  justify-content: center;
+}
+
+.gContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2em;
+  padding: 20px;
+
+}
+
+.gImg {
+  width: 90%;
+  padding: 10px;
+  max-height: 300px;
+}
+
+.qImg {
+  width: 70vw; /*90*/
+}
+
+
+
+.pImg {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.pImgDetalle {
+  width:80%;
+  margin:10px;
+}
+
+.circle {
+  border-radius: 150px 150px;
+}
+
+.imgProyContainer {
+  /*display: block;*/
+  width: 100%;
+  max-height: 30%;
+  border-radius: 50%;
+}
+
+.imgContainer {
+  /*display: block;*/
+  width: 100%;
+}
+
+.imgSw {
+  width: 100%;
+  max-height: 54vh;
+  vertical-align: top;
+  object-fit:cover;
+}
+
+.imgSwGaleria {
+ 
+  max-height: 54vh;
+  vertical-align: top;
+  object-fit:cover;
+}
+
+.proyectosContainer {
+  padding: 20px;
+  display: grid;
+}
+
+.columnasContainer {
+  display:grid;
+  /*grid-template-columns: repeat(auto-fit, minmax(40vw, 3fr));*/
+  grid-gap: 5px;
+  padding: 20px;
+}
+
+.parrafo {
+  font-size: 17px;
+  word-wrap: break-word;
+}
+
+ .parrafo > a:empty {
+  display:none!important;
+}
+
+div span a {
+    display: none;
+}
+
+div span a[href^="https:"],
+div span a[href^="http:"] {
+    display: inline-block; 
+}
+
+/*******************************************ACCORDIONS*****************************************/
+
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+/* Accordion styles */
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+/*  background: #2c3e50;
+  font-weight: bold;*/
+  cursor: pointer;
+  /* Icon */
+}
+
+.tab-label:nth-child(even) {
+  background: #a4a036;
+  color:black;
+}
+
+/*.tab-label:nth-child(odd) {
+  background: #542b13 ;
+}*/
+
+.tab-label:hover {
+    /*background: #542b13;*/
+    opacity: 0.7;
+    color:white;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  overflow-y:scroll;
+  padding: 0 1em;
+  color: #2c3e50;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #2c3e50;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #a4a036;
+  color:black;
+}
+input:checked + .tab-label {
+  background:  #542b13!important;
+  color:white;
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
+/*text overlay*/
+
+.containerImgText {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+	background: #a4a036;
+	padding: 2px;
+	 border-radius: 2px; 
+}
+
+/*back to top*/
+
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: #a4a036;
+    color: #444;
+    cursor: pointer;
+    border: 0;
+    border-radius: 2px;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+}
+#back-to-top:hover {
+    background: #542b13;
+    color: white;
+}
+#back-to-top.show {
+    opacity: 1;
+}
+
+
+
+/**************************** ICON BAR******************************************/
+
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right:0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+  border-radius:5px;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: black;
+  color: white;
+}
+
+.youtube {
+  background: black;
+  color: white;
+}
+
+.instagram{
+  background: black;
+  color: white;
+}
+
+/*OVERLAY*/
+
+.imgCirculo{
+  border-radius: 50%;
+}
+
+.containerOverlay {
+  position: relative;
+  /*text-align:center;*/
+  border-radius: 50%;
+}
+
+.imageOverlay {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.overlay {
+  position: absolute;
+  top: 50px;
+  bottom: 30;
+  left: 10;
+  right: 10;
+  height: 70%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+}
+
+.containerOverlay:hover .overlay {
+  opacity: 0.81;
+}
+
+.textoOverlay {
+  color: black;
+  font-size: 13px;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*MENU*/
+
+.menu {
+  z-index:4;
+}
+
+.menuCenter{
+  display: grid;
+  object-position: center;
+}
+
+a {
+  color: black;
+  text-decoration:none;
+}
+
+
+.toggle,
+[id^=drop] {
+  display: none;
+}
+
+
+nav {
+	padding: 0;
+	background-color: #FFF;
+	display: flex;
+	justify-content: center;
+}
+
+#logo {
+  display: block;
+  padding: 0 30px;
+  float: left;
+  font-size: 15px;
+  line-height: 60px;
+  color: white;
+}
+
+
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+nav ul {
+  align-self: center;
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+
+nav ul li {
+  margin: 0px;
+  display: inline-block;
+  float: left;
+  background-color: #FFF;
+  z-index: 2;
+}
+
+
+nav a {
+  display: block;
+  padding: 14px 20px;
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+nav ul li ul li:hover {
+  background: #FFF;
+}
+
+
+nav a:hover {
+  background-color: #a4a036;
+  ;
+}
+
+
+nav ul ul {
+  display: none;
+  position: absolute;
+
+}
+
+
+nav ul li:hover>ul {
+  display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+nav ul ul li {
+  width: 170px;
+  float: none;
+  display: list-item;
+  position: relative;
+}
+
+/* Second, Third and more Tiers
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+nav ul ul ul li {
+  position: relative;
+  top: -60px;
+  /* has to be the same number as the "width" of "nav ul ul li" */
+  left: 170px;
+}
+
+/* Change ' +' in order to change the Dropdown symbol */
+li>a:after {
+  content: ' +';
+}
+
+li>a:only-child:after {
+  content: '';
+}
+
+.full-btn {
+  display:block;
+  width:100%;
+  padding:10px;
+}
+
+.textoParrafo:empty{
+  display:none!importante;
+}
+
+
+
+/* Media Queries --------------------------------------------- */
+@media all and (max-width : 768px) {
+  #logo {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+  
+  .qImg {
+    width:80vw;
+  }
+
+  nav {
+    margin: 0;
+    display:block;
+  }
+
+  /* Hide the navigation menu by default */
+  /* Also hide the  */
+  .parrafos {
+    padding: 0px;
+  }
+  
+  .toggle+a,
+  .menu {
+    display: none;
+  }
+
+  /* Stylinf the toggle lable */
+  .toggle {
+    display: block;
+    background-color: #a4a036;
+    padding: 14px 20px;
+    color: #FFF;
+    text-decoration: none;
+    border: none;
+  }
+
+  /*	.toggle:hover {
+		background-color: #000000;
+	}*/
+  /* Display Dropdown when clicked on Parent Lable */
+  [id^=drop]:checked+ul {
+    display: block;
+  }
+
+  /* Change menu item's width to 100% */
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul .toggle,
+  nav ul ul a {
+    padding: 0 40px;
+  }
+
+  nav ul ul ul a {
+    padding: 0 80px;
+  }
+
+  nav a:hover,
+  nav ul ul ul a {
+    background-color: #a4a036;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a,
+  nav ul ul ul a {
+    padding: 14px 20px;
+    color: #000;
+    font-size: 16px;
+  }
+
+  nav ul li ul li .toggle,
+  nav ul ul a {
+    /*background-color: #212121;*/
+  }
+
+  /* Hide Dropdowns by Default */
+  nav ul ul {
+    float: none;
+    position: static;
+    color: #ffffff;
+    /* has to be the same number as the "line-height" of "nav a" */
+  }
+
+  /* Hide menus on hover */
+  nav ul ul li:hover>ul,
+  nav ul li:hover>ul {
+    display: none;
+  }
+
+  /* Fisrt Tier Dropdown */
+  nav ul ul li {
+    display: block;
+    width: 100%;
+  }
+
+  nav ul ul ul li {
+    position: static;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+  }
+  
+  
+  .show-hvr > div{
+ display:none;
+}
+
+.show-hvr:hover > div{
+display:none;
+}
+  
+  .columnasContainer {
+  grid-template-columns: repeat(auto-fit, minmax(90vw, 3fr));
+}
+  
+}
+
+@media all and (max-width : 330px) {
+  nav ul li {
+    display: block;
+    width: 94%;
+  }
+}
